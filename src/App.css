@@ -1,0 +1,204 @@
+/* Base Styles */
+body {
+  font-family: 'Calibri', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* App Branding (Optional) */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .App-logo {
+    animation: none;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Utility Classes */
+.text-muted {
+  color: #b0b0b0 !important;
+  font-weight: normal !important;
+  font-size: 0.875rem;
+}
+
+.outline-text {
+  color: #f1f1f1 !important;
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.preserve-lines {
+  white-space: pre-wrap;
+}
+
+::placeholder {
+  color: #cccccc !important;
+  opacity: 0.5 !important;
+}
+
+/* Card Customization */
+.card {
+  background-color: #3a3a3a;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-header,
+.card-footer {
+  background-color: #2f2f2f;
+}
+
+.card-footer {
+  border-bottom-left-radius: 1rem !important;
+  border-bottom-right-radius: 1rem !important;
+}
+
+/* Button Styling */
+.btn-primary,
+.btn-secondary,
+.btn-danger,
+.btn-success,
+.btn-warning {
+  border-radius: 0.5rem;
+  padding: 0.4rem 1.2rem;
+}
+
+.btn-primary:hover {
+  background-color: #1e3d8f;
+}
+
+.btn-danger:hover {
+  background-color: #b91c1c;
+}
+
+.btn-success:hover {
+  background-color: #166534;
+}
+
+/* Modal Styling */
+.modal-content {
+  background-color: #363636;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+.btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Form Controls */
+form .form-control,
+input,
+textarea {
+  background-color: #2e2e2e;
+  color: #eaeaea;
+  border: 1px solid #555;
+  border-radius: 0.5rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+.form-control:focus {
+  background-color: #2e2e2e;
+  color: #fff;
+  border-color: #777;
+  box-shadow: none;
+}
+
+/* Accordion Styling */
+.accordion-button {
+  background-color: #3c3c3c;
+  color: #f5f5f5;
+  font-weight: 500;
+  border: none;
+  text-shadow: 0 0 1px #000;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #4a4a4a;
+  color: #ffffff;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #2f2f2f;
+  color: #dddddd;
+  border-top: 1px solid #444;
+  white-space: pre-wrap;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .card {
+    margin: 0 auto;
+  }
+
+  .modal-lg {
+    max-width: 95%;
+  }
+}
