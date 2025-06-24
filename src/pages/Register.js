@@ -45,6 +45,9 @@ export default function Register(){
     		});
 			}
 		})
+		.catch(error => {
+		  Swal.fire("Registration Failed", error.response?.data?.message || "Invalid input.", "error");
+		});
 	}
 
 	useEffect(() => {
